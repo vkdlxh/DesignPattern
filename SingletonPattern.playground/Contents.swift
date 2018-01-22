@@ -8,13 +8,13 @@ class SingletonPattern {
     var name: String = ""
     
     // ただshardInstanseを通じてのみインスタンスを生成できる。
-    static let shardInstanse = SingletonPattern()
+    static let sharedInstanse = SingletonPattern()
     // プライベートに宣言して外部からインスタンスを生成できなく遮断する。
     private init() { }
 }
 
 // 使い方
-let instance1 = SingletonPattern.shardInstanse
+let instance1 = SingletonPattern.sharedInstanse
 
 // プロパティに値を割り当て。
 instance1.name = "シングルトン"
