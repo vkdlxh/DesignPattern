@@ -8,6 +8,12 @@
 
 import Foundation
 
+enum WorkType: String {
+    case working = "working"   // 仕事
+    case breaking = "breaking" // 休み
+    case goOut = "goOut"     // 外出
+}
+
 class DataManager {
     // Singleton
     static let sharedInstance = DataManager()
@@ -15,5 +21,7 @@ class DataManager {
     
     var name: String?
     var phone: String?
+    
+    var status: WorkType = .working
     
 }

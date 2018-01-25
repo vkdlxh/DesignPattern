@@ -107,6 +107,20 @@
                                     <segue destination="Jfm-iA-L0u" kind="show" id="6ek-DJ-If8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63z-w3-SgD">
+                                <rect key="frame" x="150" y="344" width="209" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WorkStatus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzY-qz-p3P">
+                                <rect key="frame" x="27" y="344" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Hck-sy-Fo0"/>
@@ -116,11 +130,12 @@
                         <outlet property="nameTextField" destination="Zt2-Wh-VoJ" id="ea4-aB-Bw7"/>
                         <outlet property="phoneLabel" destination="kAC-Dn-QiF" id="aO4-LU-QyA"/>
                         <outlet property="phoneTextField" destination="SXD-3b-tJT" id="F9C-uG-ALd"/>
+                        <outlet property="statusLabel" destination="63z-w3-SgD" id="2FW-WU-pZx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POS-d6-sBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1399" y="-9"/>
+            <point key="canvasLocation" x="1397.5999999999999" y="-9.4452773613193415"/>
         </scene>
         <!--Singleton2 View Controller-->
         <scene sceneID="IwU-yC-YFZ">
@@ -166,6 +181,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2q-OO-SzE">
+                                <rect key="frame" x="168" y="534" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="break"/>
+                                <connections>
+                                    <action selector="breakingAction:" destination="Jfm-iA-L0u" eventType="touchUpInside" id="VJO-MK-FIG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uE-f3-KzU">
+                                <rect key="frame" x="278" y="534" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="go out"/>
+                                <connections>
+                                    <action selector="goOutAction:" destination="Jfm-iA-L0u" eventType="touchUpInside" id="B1B-Sb-DtP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6e-xb-hiS">
+                                <rect key="frame" x="48" y="534" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="working"/>
+                                <connections>
+                                    <action selector="workingAction:" destination="Jfm-iA-L0u" eventType="touchUpInside" id="WC3-ci-hFk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dzo-Bl-bso"/>
