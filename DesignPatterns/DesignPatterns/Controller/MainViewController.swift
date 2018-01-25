@@ -49,6 +49,8 @@ extension MainViewController: UITableViewDelegate {
         switch indexPath.row {
         case 0:
             self.performSegue(withIdentifier: "singletonSegue", sender: self)
+        case 1:
+            self.performSegue(withIdentifier: "factoryMethodSegue", sender: self)
         default:
             print("nothing")
         }
