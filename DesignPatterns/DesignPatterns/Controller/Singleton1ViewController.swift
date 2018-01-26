@@ -11,7 +11,16 @@ import UIKit
 class Singleton1ViewController: UIViewController {
     
     let dm = DataManager.sharedInstance
-
+    let working = Notification.Name(rawValue: WorkType.working.rawValue)
+    let breaking = Notification.Name(rawValue: WorkType.breaking.rawValue)
+    let goOut = Notification.Name(rawValue: WorkType.goOut.rawValue)
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: working, object: nil)
+        NotificationCenter.default.removeObserver(self, name: breaking, object: nil)
+        NotificationCenter.default.removeObserver(self, name: goOut, object: nil)
+    }
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
@@ -29,18 +38,14 @@ class Singleton1ViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Singleton Pattern"
         statusLabel.text = "\(dm.status)中です。"
-        createObserver()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        registObserver()
         loadData()
     }
     
-    func createObserver() {
-        let working = Notification.Name(rawValue: WorkType.working.rawValue)
-        let breaking = Notification.Name(rawValue: WorkType.breaking.rawValue)
-        let goOut = Notification.Name(rawValue: WorkType.goOut.rawValue)
-        
+    func registObserver() {
         NotificationCenter.default.addObserver(self, selector: #selector(updateLabel), name: working, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(updateLabel), name: breaking, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(updateLabel), name: goOut, object: nil)

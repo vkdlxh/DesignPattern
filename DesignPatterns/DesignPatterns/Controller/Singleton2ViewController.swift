@@ -26,22 +26,19 @@ class Singleton2ViewController: UIViewController {
     
     @IBAction func workingAction(_ sender: Any) {
         dm.status = .working
-        let name = Notification.Name(rawValue: WorkType.working.rawValue)
-        NotificationCenter.default.post(name: name, object: nil)
+//        dm.changeStatus(workType: .working)
         self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func breakingAction(_ sender: Any) {
         dm.status = .breaking
-        let name = Notification.Name(rawValue: WorkType.breaking.rawValue)
-        NotificationCenter.default.post(name: name, object: nil)
+//        dm.changeStatus(workType: .breaking)
         self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func goOutAction(_ sender: Any) {
         dm.status = .goOut
-        let name = Notification.Name(rawValue: WorkType.goOut.rawValue)
-        NotificationCenter.default.post(name: name, object: nil)
+//        dm.changeStatus(workType: .goOut)
         self.navigationController?.popViewController(animated: true)
     }
     
