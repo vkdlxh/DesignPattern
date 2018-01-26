@@ -13,10 +13,6 @@ class Singleton1ViewController: UIViewController {
     let dm = DataManager.sharedInstance
     let name = Notification.Name(rawValue: "status")
     
-    deinit {
-        NotificationCenter.default.removeObserver(self, name: name, object: nil)
-    }
-    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
@@ -37,6 +33,10 @@ class Singleton1ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         registObserver()
         updateLabel()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: name, object: nil)
     }
     
     func registObserver() {
