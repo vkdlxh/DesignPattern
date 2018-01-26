@@ -19,6 +19,10 @@
 		DA8D2B492018251600F3FFA2 /* Singleton2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D2B482018251600F3FFA2 /* Singleton2ViewController.swift */; };
 		DA8D2B4F201987A600F3FFA2 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D2B4E201987A600F3FFA2 /* FactoryMethodViewController.swift */; };
 		DA8D2B5220198EDA00F3FFA2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D2B5120198EDA00F3FFA2 /* Currency.swift */; };
+		DAA13C11201B1A650061FCE0 /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C10201B1A650061FCE0 /* AbstractFactoryViewController.swift */; };
+		DAA13C13201B239C0061FCE0 /* Sedan.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C12201B239C0061FCE0 /* Sedan.swift */; };
+		DAA13C17201B30E40061FCE0 /* SUV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C16201B30E40061FCE0 /* SUV.swift */; };
+		DAA13C19201B30F60061FCE0 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C18201B30F60061FCE0 /* Factory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		DA8D2B482018251600F3FFA2 /* Singleton2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton2ViewController.swift; sourceTree = "<group>"; };
 		DA8D2B4E201987A600F3FFA2 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
 		DA8D2B5120198EDA00F3FFA2 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		DAA13C10201B1A650061FCE0 /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
+		DAA13C12201B239C0061FCE0 /* Sedan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sedan.swift; sourceTree = "<group>"; };
+		DAA13C16201B30E40061FCE0 /* SUV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUV.swift; sourceTree = "<group>"; };
+		DAA13C18201B30F60061FCE0 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +152,7 @@
 				DA8D2B43201824AB00F3FFA2 /* Singleton1ViewController.swift */,
 				DA8D2B482018251600F3FFA2 /* Singleton2ViewController.swift */,
 				DA8D2B4E201987A600F3FFA2 /* FactoryMethodViewController.swift */,
+				DAA13C10201B1A650061FCE0 /* AbstractFactoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				DA8D2B5120198EDA00F3FFA2 /* Currency.swift */,
+				DAA13C12201B239C0061FCE0 /* Sedan.swift */,
+				DAA13C16201B30E40061FCE0 /* SUV.swift */,
+				DAA13C18201B30F60061FCE0 /* Factory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,11 +311,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8D2B4F201987A600F3FFA2 /* FactoryMethodViewController.swift in Sources */,
+				DAA13C11201B1A650061FCE0 /* AbstractFactoryViewController.swift in Sources */,
+				DAA13C19201B30F60061FCE0 /* Factory.swift in Sources */,
 				DA8D2B47201824F300F3FFA2 /* DataManager.swift in Sources */,
 				DA8D2B44201824AB00F3FFA2 /* Singleton1ViewController.swift in Sources */,
 				DA8D2B17201823DD00F3FFA2 /* MainViewController.swift in Sources */,
 				DA8D2B492018251600F3FFA2 /* Singleton2ViewController.swift in Sources */,
+				DAA13C17201B30E40061FCE0 /* SUV.swift in Sources */,
 				DA8D2B5220198EDA00F3FFA2 /* Currency.swift in Sources */,
+				DAA13C13201B239C0061FCE0 /* Sedan.swift in Sources */,
 				DA8D2B15201823DD00F3FFA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
