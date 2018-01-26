@@ -25,20 +25,17 @@ class Singleton2ViewController: UIViewController {
     }
     
     @IBAction func workingAction(_ sender: Any) {
-        dm.status = .working
-//        dm.changeStatus(workType: .working)
+        dm.changeStatus(workType: .working)
         self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func breakingAction(_ sender: Any) {
-        dm.status = .breaking
-//        dm.changeStatus(workType: .breaking)
+        dm.changeStatus(workType: .breaking)
         self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func goOutAction(_ sender: Any) {
-        dm.status = .goOut
-//        dm.changeStatus(workType: .goOut)
+        dm.changeStatus(workType: .goOut)
         self.navigationController?.popViewController(animated: true)
     }
     

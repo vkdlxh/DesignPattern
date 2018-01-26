@@ -21,21 +21,16 @@ class DataManager {
     
     var name: String?
     var phone: String?
-    var status: WorkType = .working {
-        didSet {
-            let name = Notification.Name(rawValue: status.rawValue)
-            NotificationCenter.default.post(name: name, object: nil)
-        }
+    private var status: WorkType = .working
+    
+    func changeStatus(workType: WorkType) {
+        status = workType
+        let name = Notification.Name(rawValue: "status")
+        NotificationCenter.default.post(name: name, object: nil)
     }
     
-    let working = Notification.Name(rawValue: WorkType.working.rawValue)
-    let breaking = Notification.Name(rawValue: WorkType.breaking.rawValue)
-    let goOut = Notification.Name(rawValue: WorkType.goOut.rawValue)
-    
-//    func changeStatus(workType: WorkType) {
-//        status = workType
-//        let name = Notification.Name(rawValue: workType.rawValue)
-//        NotificationCenter.default.post(name: name, object: nil)
-//    }
+    func setStatus() -> WorkType {
+        return status
+    }
     
 }
