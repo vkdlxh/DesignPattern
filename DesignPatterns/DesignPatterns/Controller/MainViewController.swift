@@ -11,7 +11,8 @@ import UIKit
 class MainViewController: UIViewController {
     
     let patterns = ["Singleton",
-                    "Factory Method"]
+                    "Factory Method",
+                    "Abstract Factory"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,8 @@ extension MainViewController: UITableViewDelegate {
             self.performSegue(withIdentifier: "singletonSegue", sender: self)
         case 1:
             self.performSegue(withIdentifier: "factoryMethodSegue", sender: self)
+        case 2:
+            self.performSegue(withIdentifier: "abstractFactorySegue", sender: self)
         default:
             print("nothing")
         }
