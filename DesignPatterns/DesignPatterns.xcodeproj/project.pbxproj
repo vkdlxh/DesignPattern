@@ -17,6 +17,8 @@
 		DA8D2B44201824AB00F3FFA2 /* Singleton1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D2B43201824AB00F3FFA2 /* Singleton1ViewController.swift */; };
 		DA8D2B47201824F300F3FFA2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D2B46201824F300F3FFA2 /* DataManager.swift */; };
 		DA8D2B492018251600F3FFA2 /* Singleton2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D2B482018251600F3FFA2 /* Singleton2ViewController.swift */; };
+		DA8D2B4F201987A600F3FFA2 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D2B4E201987A600F3FFA2 /* FactoryMethodViewController.swift */; };
+		DA8D2B5220198EDA00F3FFA2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8D2B5120198EDA00F3FFA2 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		DA8D2B43201824AB00F3FFA2 /* Singleton1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton1ViewController.swift; sourceTree = "<group>"; };
 		DA8D2B46201824F300F3FFA2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		DA8D2B482018251600F3FFA2 /* Singleton2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton2ViewController.swift; sourceTree = "<group>"; };
+		DA8D2B4E201987A600F3FFA2 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
+		DA8D2B5120198EDA00F3FFA2 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		DA8D2B13201823DD00F3FFA2 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				DA8D2B5020198EC600F3FFA2 /* Model */,
 				DA8D2B45201824BE00F3FFA2 /* Manager */,
 				DA8D2B422018245600F3FFA2 /* Controller */,
 				DA8D2B14201823DD00F3FFA2 /* AppDelegate.swift */,
@@ -138,6 +143,7 @@
 				DA8D2B16201823DD00F3FFA2 /* MainViewController.swift */,
 				DA8D2B43201824AB00F3FFA2 /* Singleton1ViewController.swift */,
 				DA8D2B482018251600F3FFA2 /* Singleton2ViewController.swift */,
+				DA8D2B4E201987A600F3FFA2 /* FactoryMethodViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -148,6 +154,14 @@
 				DA8D2B46201824F300F3FFA2 /* DataManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		DA8D2B5020198EC600F3FFA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D2B5120198EDA00F3FFA2 /* Currency.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,10 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8D2B4F201987A600F3FFA2 /* FactoryMethodViewController.swift in Sources */,
 				DA8D2B47201824F300F3FFA2 /* DataManager.swift in Sources */,
 				DA8D2B44201824AB00F3FFA2 /* Singleton1ViewController.swift in Sources */,
 				DA8D2B17201823DD00F3FFA2 /* MainViewController.swift in Sources */,
 				DA8D2B492018251600F3FFA2 /* Singleton2ViewController.swift in Sources */,
+				DA8D2B5220198EDA00F3FFA2 /* Currency.swift in Sources */,
 				DA8D2B15201823DD00F3FFA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
