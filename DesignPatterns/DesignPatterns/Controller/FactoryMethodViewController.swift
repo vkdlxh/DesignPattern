@@ -17,9 +17,13 @@ class FactoryMethodViewController: UIViewController {
     var nations = [Country]()
     
     @IBOutlet weak var symbolLabel: UILabel!
+    
+    @IBOutlet weak var currencyLabel: CurrencyLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setArray()
+        currencyLabel.countyFlag(county: "greece")
     }
 
     func setArray() {
