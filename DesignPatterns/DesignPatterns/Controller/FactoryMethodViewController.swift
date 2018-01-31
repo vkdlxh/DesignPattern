@@ -23,7 +23,7 @@ class FactoryMethodViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setArray()
-        currencyLabel.countyFlag(county: "greece")
+        currencyLabel.countyFlag(county: .greece)
     }
 
     func setArray() {

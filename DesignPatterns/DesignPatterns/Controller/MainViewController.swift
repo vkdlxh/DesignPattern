@@ -12,7 +12,8 @@ class MainViewController: UIViewController {
     
     let patterns = ["Singleton",
                     "Factory Method",
-                    "Abstract Factory"]
+                    "Abstract Factory",
+                    "BitCoin"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,8 @@ extension MainViewController: UITableViewDelegate {
             self.performSegue(withIdentifier: "factoryMethodSegue", sender: self)
         case 2:
             self.performSegue(withIdentifier: "abstractFactorySegue", sender: self)
+        case 3:
+            self.performSegue(withIdentifier: "bitcoinSegue", sender: self)
         default:
             print("nothing")
         }
