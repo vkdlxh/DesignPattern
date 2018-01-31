@@ -41,6 +41,7 @@ extension BitCoinViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "BitCoinCell", for: indexPath) as? BitCoinTableViewCell {
             cell.countryLabel.countyFlag(county: nations[indexPath.row])
+            cell.currencyLabel.text = "t"
             return cell
         }
         return UITableViewCell()

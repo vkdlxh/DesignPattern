@@ -17,15 +17,17 @@ class CurrencyLabel: UILabel {
 
     
     func countyFlag(county: Country) {
-        let countryName = county.rawValue
+        guard let currency = CurrencyFactory.currency(for: county) else {
+            return
+        }
         let imageAttachment =  NSTextAttachment()
-        imageAttachment.image = UIImage(named: countryName)
+        imageAttachment.image = UIImage(named: county.rawValue)
         let attachmentString = NSAttributedString(attachment: imageAttachment)
         let imageOffsetY:CGFloat = -25.0;
         imageAttachment.bounds = CGRect(x: 0, y: imageOffsetY, width: 60, height: 60)
         let completeText = NSMutableAttributedString(string: "")
         completeText.append(attachmentString)
-        let textAfterIcon = NSMutableAttributedString(string: countryName)
+        let textAfterIcon = NSMutableAttributedString(string: currency.code())
         completeText.append(textAfterIcon)
         self.attributedText = completeText
     }

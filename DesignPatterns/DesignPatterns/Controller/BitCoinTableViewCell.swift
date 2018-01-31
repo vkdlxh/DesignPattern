@@ -11,6 +11,7 @@ import UIKit
 class BitCoinTableViewCell: UITableViewCell {
 
     @IBOutlet weak var countryLabel: CurrencyLabel!
+    @IBOutlet weak var currencyLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
