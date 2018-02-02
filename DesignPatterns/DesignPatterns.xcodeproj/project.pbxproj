@@ -23,6 +23,13 @@
 		DAA13C13201B239C0061FCE0 /* Sedan.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C12201B239C0061FCE0 /* Sedan.swift */; };
 		DAA13C17201B30E40061FCE0 /* SUV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C16201B30E40061FCE0 /* SUV.swift */; };
 		DAA13C19201B30F60061FCE0 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C18201B30F60061FCE0 /* Factory.swift */; };
+		DAA13C20202074970061FCE0 /* CurrencyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C1F202074970061FCE0 /* CurrencyLabel.swift */; };
+		DAA13C26202078DD0061FCE0 /* greece.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA13C22202078DC0061FCE0 /* greece.png */; };
+		DAA13C27202078DD0061FCE0 /* unitedStates.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA13C23202078DC0061FCE0 /* unitedStates.png */; };
+		DAA13C28202078DD0061FCE0 /* spain.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA13C24202078DC0061FCE0 /* spain.png */; };
+		DAA13C29202078DD0061FCE0 /* uk.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA13C25202078DC0061FCE0 /* uk.png */; };
+		DAA13C2B202185360061FCE0 /* BitCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C2A202185360061FCE0 /* BitCoinViewController.swift */; };
+		DAA13C2F20218FCC0061FCE0 /* BitCoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C2E20218FCC0061FCE0 /* BitCoinTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +72,13 @@
 		DAA13C12201B239C0061FCE0 /* Sedan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sedan.swift; sourceTree = "<group>"; };
 		DAA13C16201B30E40061FCE0 /* SUV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUV.swift; sourceTree = "<group>"; };
 		DAA13C18201B30F60061FCE0 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		DAA13C1F202074970061FCE0 /* CurrencyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyLabel.swift; sourceTree = "<group>"; };
+		DAA13C22202078DC0061FCE0 /* greece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greece.png; sourceTree = "<group>"; };
+		DAA13C23202078DC0061FCE0 /* unitedStates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unitedStates.png; sourceTree = "<group>"; };
+		DAA13C24202078DC0061FCE0 /* spain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spain.png; sourceTree = "<group>"; };
+		DAA13C25202078DC0061FCE0 /* uk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uk.png; sourceTree = "<group>"; };
+		DAA13C2A202185360061FCE0 /* BitCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinViewController.swift; sourceTree = "<group>"; };
+		DAA13C2E20218FCC0061FCE0 /* BitCoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +129,8 @@
 		DA8D2B13201823DD00F3FFA2 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				DAA13C21202078440061FCE0 /* images */,
+				DAA13C1E2020743B0061FCE0 /* Utilities */,
 				DA8D2B5020198EC600F3FFA2 /* Model */,
 				DA8D2B45201824BE00F3FFA2 /* Manager */,
 				DA8D2B422018245600F3FFA2 /* Controller */,
@@ -153,6 +169,8 @@
 				DA8D2B482018251600F3FFA2 /* Singleton2ViewController.swift */,
 				DA8D2B4E201987A600F3FFA2 /* FactoryMethodViewController.swift */,
 				DAA13C10201B1A650061FCE0 /* AbstractFactoryViewController.swift */,
+				DAA13C2A202185360061FCE0 /* BitCoinViewController.swift */,
+				DAA13C2E20218FCC0061FCE0 /* BitCoinTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +192,26 @@
 				DAA13C18201B30F60061FCE0 /* Factory.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DAA13C1E2020743B0061FCE0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DAA13C1F202074970061FCE0 /* CurrencyLabel.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DAA13C21202078440061FCE0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DAA13C22202078DC0061FCE0 /* greece.png */,
+				DAA13C24202078DC0061FCE0 /* spain.png */,
+				DAA13C25202078DC0061FCE0 /* uk.png */,
+				DAA13C23202078DC0061FCE0 /* unitedStates.png */,
+			);
+			name = images;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +321,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA13C26202078DD0061FCE0 /* greece.png in Resources */,
+				DAA13C29202078DD0061FCE0 /* uk.png in Resources */,
+				DAA13C28202078DD0061FCE0 /* spain.png in Resources */,
+				DAA13C27202078DD0061FCE0 /* unitedStates.png in Resources */,
 				DA8D2B1F201823DD00F3FFA2 /* LaunchScreen.storyboard in Resources */,
 				DA8D2B1C201823DD00F3FFA2 /* Assets.xcassets in Resources */,
 				DA8D2B1A201823DD00F3FFA2 /* Main.storyboard in Resources */,
@@ -311,8 +353,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8D2B4F201987A600F3FFA2 /* FactoryMethodViewController.swift in Sources */,
+				DAA13C20202074970061FCE0 /* CurrencyLabel.swift in Sources */,
 				DAA13C11201B1A650061FCE0 /* AbstractFactoryViewController.swift in Sources */,
 				DAA13C19201B30F60061FCE0 /* Factory.swift in Sources */,
+				DAA13C2B202185360061FCE0 /* BitCoinViewController.swift in Sources */,
 				DA8D2B47201824F300F3FFA2 /* DataManager.swift in Sources */,
 				DA8D2B44201824AB00F3FFA2 /* Singleton1ViewController.swift in Sources */,
 				DA8D2B17201823DD00F3FFA2 /* MainViewController.swift in Sources */,
@@ -320,6 +364,7 @@
 				DAA13C17201B30E40061FCE0 /* SUV.swift in Sources */,
 				DA8D2B5220198EDA00F3FFA2 /* Currency.swift in Sources */,
 				DAA13C13201B239C0061FCE0 /* Sedan.swift in Sources */,
+				DAA13C2F20218FCC0061FCE0 /* BitCoinTableViewCell.swift in Sources */,
 				DA8D2B15201823DD00F3FFA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
